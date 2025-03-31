@@ -1,0 +1,122 @@
+.footer {
+
+    &__container {
+        color: $text-main-color;
+    }
+
+    &__network {
+
+        a {
+            color: $text-main-color;
+            font-size: 20px;
+            display: block;
+            width: 40px;
+            height: 40px;
+            border: 1px solid $text-main-color;
+            border-radius: 50%;
+            text-align: center;
+            transition: all .3s ease-in-out;
+            position: relative;
+
+            &:hover {
+                color: $sub-hover-color;
+                border-color: $sub-hover-color;
+            }
+
+
+            .fa-brands {
+                position: absolute;
+                right: 50%;
+                top: 50%;
+                transform: translate(50%, -50%);
+            }
+        }
+    }
+}
+
+.network {
+    gap: 16px;
+}
+
+.navigation {
+
+    &__title {
+        color: $header-color;
+        padding-bottom: 30px;
+    }
+
+    &__wrapper {
+        gap: 25px;
+
+        a {
+            text-decoration: none;
+            color: $text-main-color;
+            transition: color .3s ease-in-out;
+
+            &:hover {
+                color: $sub-hover-color;
+            }
+        }
+    }
+}
+
+.form {
+    gap: 30px;
+
+    .gform_wrapper {
+
+        form {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+
+            @include media(lg) {
+                flex-direction: column;
+            }
+
+            .before {
+                margin-top: unset;
+            }
+
+            [type='email'] {
+                padding-inline: 33px;
+                padding-block: 15px;
+                background-color: inherit;
+                color: $header-color;
+                border-radius: 30px;
+                height: 54px;
+
+                &::placeholder {
+                    color: $text-main-color;
+                }
+
+                &:focus {
+                    border-color: $sub-hover-color;
+                }
+
+            }
+
+            .gform_footer {
+                margin-top: unset;
+
+                #gform_submit_button_1 {
+                    padding-block: 16px;
+                    padding-inline: 30px;
+                    border-radius: 50px;
+                    background: $btn-color;
+                    background-size: 400%;
+                    letter-spacing: 2px;
+                    font-size: 14px;
+                    font-weight: 500;
+                    transition: all 0.5s ease;
+    
+                    &:hover {
+                        background-position: 0% 50%;
+                        background-size: 100%;
+                        animation-timing-function: linear;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "./inc/reset";
+@import "../../node_modules/aos/src/sass/aos.scss";
+@import "../../build/css/blaze.css";
+@import "./inc/vars";
+@import "./inc/mixins";
+@import "./global";
+@import "./pagination";
+@import "./header";
+@import "./templates/home";
+@import "./footer";

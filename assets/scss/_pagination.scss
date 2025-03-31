@@ -1,0 +1,69 @@
+.button-structure {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+
+    .blaze-pagination {
+        display: flex;
+        gap: 14px;
+
+        button {
+            background: rgba($btn-secondary-color, 0.5);
+            border: none;
+            border-radius: 50%;
+            color: #0000;
+            cursor: pointer;
+            outline: 0;
+            width: 12px;
+            height: 12px;
+            transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+            &.active {
+                background-color: $header-color;
+            }
+        }
+
+    }
+
+    .blaze-next,
+    .blaze-prev {
+        border: none;
+        background-color: inherit;
+    }
+
+    .blaze-next,
+    .blaze-prev {
+        &::after {
+            font-family: $fa;
+            font-weight: 900;
+            display: block;
+            color: rgba($btn-secondary-color, 0.5);
+            font-size: 25px;
+            transition: color 0.3s ease-in-out;
+        }
+    }
+
+    .blaze-next:hover,
+    .blaze-prev:hover {
+        &::after {
+            color: $header-color;
+        }
+    }
+
+
+    .blaze-prev {
+        &::after {
+            content: '\f104';
+        }
+    }
+
+    .blaze-next {
+        &::after {
+            content: '\f105';
+        }
+
+    }
+    
+}

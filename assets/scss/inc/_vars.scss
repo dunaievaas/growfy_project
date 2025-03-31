@@ -1,0 +1,35 @@
+//colors
+$main-color: #000000;
+$picton-blue: #3D96F4;
+$dusty-gray: #9C9C9C;
+$jumbo: #81818B;
+$white: #ffff;
+
+$header-color: $white;
+$text-main-color: $dusty-gray;
+$sub-color: $jumbo;
+$sub-hover-color: $picton-blue;
+$btn-color: linear-gradient(to right, #00d2ff 0%, #3a47d5 50%, #c67700 100%);
+$btn-secondary-color:  rgba(129, 129, 139, 0.2);
+
+//fonts
+$fallback: Arial, Helvetica, sans-serif;
+$default-font-name: 'Poppins';
+$main-font: $default-font-name, $fallback;
+$fa: 'Font Awesome 5 Free';
+$fab: 'Font Awesome 5 Brands';
+
+//font size
+$main-size-font: 18px;
+$menu-size-font: 16px;
+$btn-size-font: 14px;
+
+//container size
+$container-size: 1280px;
+
+$break-points: (
+    "xl": 1200px,
+    "lg": 992px,
+    "md": 768px,
+    "sm": 576px,
+);

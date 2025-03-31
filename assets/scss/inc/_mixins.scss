@@ -1,0 +1,11 @@
+@mixin media($point: sm) {
+    @media screen and (max-width: map-get($break-points, $point)) {
+        @content;
+    }
+}
+
+@mixin media-m($point: sm) {
+    @media screen and (min-width: calc(map-get($break-points, $point) + 1)) {
+        @content;
+    }
+}

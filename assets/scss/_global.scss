@@ -1,0 +1,116 @@
+body {
+    font-family: $main-font;
+    font-weight: 300;
+    line-height: 1.6;
+    background-color: $main-color;
+    color: $text-main-color;
+
+    @include media(sm) {
+        font-size: 12px;
+    }
+}
+
+.main-content {
+    padding-top: 5rem;
+
+    @include media(lg) {
+        padding-top: 2rem;
+    }
+}
+
+[class*="__container"] {
+    max-width: $container-size;
+    margin: 0 auto;
+    box-sizing: border-box;
+    overflow-y: hidden;
+    padding-inline: 1rem;
+    padding-block: 2rem;
+
+    @include media(xl) {
+       
+    }
+}
+
+.main-button {
+    max-height: max-content;
+    padding-block: 16px;
+    padding-inline: 30px;
+    border-radius: 50px;
+    background: $btn-color;
+    background-size: 400%;
+    color: $white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+    &:hover {
+        background-position: 0% 50%;
+        background-size: 100%;
+        animation-timing-function: linear;
+    }
+}
+
+h1 {
+    color: $header-color; 
+    font-size: 53px;
+    font-weight: 500;
+    line-height: 1.2;
+    padding-bottom: 20px;
+
+    @include media(md) {
+        font-size: 35px; 
+    }
+}
+
+h2 {
+    color: $header-color;
+    font-weight: 500;
+    font-size: 52px;
+    line-height: 1.2;
+    padding-bottom: 20px;
+
+    @include media(md) {
+        font-size: 30px;
+    }
+}
+
+h3 {
+    font-size: 50px;
+    color: $header-color;
+    font-weight: normal;
+}
+
+h4 {
+    font-size: 20px;
+    color: $header-color;
+    font-weight: 500;
+
+}
+
+.subtitle {
+    font-weight: 300;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 10px 19px;
+    border: 1px solid rgba($text-main-color, 0.3);
+    border-radius: 10px;
+    max-width: max-content;
+}
+
+.logo {
+
+    .custom-logo {
+        max-width: 137px;
+        max-height: 33px;
+    }
+}
+
+.img-responsive {
+    max-width: 100%;
+    object-fit: contain;
+}
+
